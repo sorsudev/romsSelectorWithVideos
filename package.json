@@ -1,0 +1,30 @@
+{
+  "name": "romselectrowithvideos",
+  "version": "1.0.0",
+  "description": "aplication get a roms files with comparative videos folder",
+  "main": "main.js",
+  "scripts": {
+    "pack": "build",
+    "dist": "build -w"
+  },
+  "author": "Oscar Hugo Cardenas Lopez <oscardev@cacyberlo.com.mx> (https://github.com/sorsudev)",
+  "license": "ISC",
+  "build": {
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron": "^1.8.4",
+    "electron-builder": "^20.10.0",
+    "electron-reload": "^1.2.2"
+  }
+}

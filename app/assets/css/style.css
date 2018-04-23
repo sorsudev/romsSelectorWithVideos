@@ -1,0 +1,21 @@
+.form-page {
+  width: 500px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.div2of2 {
+    width: 50%;
+}
+
+.paddingTop15 {
+    padding-top: 15px;
+}
+
+.blue-background {
+    background: #00BFFF !important;
+}
