@@ -19,12 +19,12 @@ $(function(){
         });
     });
 
-    $('#process-directory').click(function(){
+    $('#load-directory').click(function(){
         let files = fs.readdirSync($('#directoryInfo').html());
         let maxElements = files.length;
         files.forEach(function(file, index){
             let id = `item${maxElements-(index + 1)}`;
-            let input = `<input id="${id}" type="checkbox">`;
+            let input = `<input id="${id}" type="checkbox" checked>`;
             let label = `<label for="${id}">${file}</label>`;
             $('#todo-list .items').prepend(label);
             $('#todo-list .items').prepend(input);
