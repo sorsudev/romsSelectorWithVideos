@@ -1,15 +1,10 @@
 .form-page {
   width: 500px;
-  padding: 8% 0 0;
   margin: auto;
 }
 
 .hidden {
     display: none;
-}
-
-.div2of2 {
-    width: 50%;
 }
 
 .paddingTop15 {

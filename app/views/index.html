@@ -4,26 +4,34 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Roms Selector with Video folder Comparator</title>
+        <link rel="stylesheet" href="../assets/css/font-awesome.min.css" >
         <link rel="stylesheet" href="../assets/css/todolist.css" >
         <link rel="stylesheet" href="../assets/css/formComponets.css" >
+        <link rel="stylesheet" href="../assets/css/grids.css" >
         <link rel="stylesheet" href="../assets/css/style.css" >
-        <link rel="stylesheet" href="../assets/css/font-awesome.min.css" >
     </head>
     <body>
         <div class="form-page">
             <div class="form">
+                <legend class="legend">ACCIONES</legend>
                 <button id="select-directory">Seleciona el directorio de videos</button>
                 <span id="directoryInfo" class="hidden"></span>
-                <div id="action-elements" class="div2of2 paddingTop15 hidden">
-                    <button id="load-directory" class="blue-background">Cargar</button>
+                <div id="action-elements" class="Grid Grid--gutters Grid--cols-2 u-textCenter paddingTop15 hidden">
+                    <div class="Grid-cell">
+                        <button id="load-directory" class="blue-background">Cargar</button>
+                    </div>
+
+                    <div class="Grid-cell">
+                        <button id="process-directory">Procesar</button>
+                    </div>
                 </div>
             </div>
             <div id="todo-list" class="container">
                 <h1>Lista de juegos a cargar</h1>
                 <div class="items">
 
-                    <h2 class="done" aria-hidden="true">Done</h2>
-                    <h2 class="undone" aria-hidden="true">Not Done</h2>
+                    <h2 class="done" aria-hidden="true">Para procesar</h2>
+                    <h2 class="undone" aria-hidden="true">No procesar</h2>
                 </div>
             </div>
         </div>

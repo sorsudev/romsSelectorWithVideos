@@ -12,8 +12,8 @@ app.on('window-all-closed', () => {
 
 app.on('ready', () => {
     mainWindow = new BrowserWindow({
-        height: 768,
-        width: 1266
+        height: 700,
+        width: 800
     });
 
     mainWindow.setMenu(null);
